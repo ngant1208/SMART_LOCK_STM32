@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test2562021\startup_stm32f103x6.o"
+"test2562021\main.o"
+"test2562021\stm32f1xx_it.o"
+"test2562021\stm32f1xx_hal_msp.o"
+"test2562021\stm32f1xx_hal_gpio_ex.o"
+"test2562021\stm32f1xx_hal_tim.o"
+"test2562021\stm32f1xx_hal_tim_ex.o"
+"test2562021\stm32f1xx_hal.o"
+"test2562021\stm32f1xx_hal_rcc.o"
+"test2562021\stm32f1xx_hal_rcc_ex.o"
+"test2562021\stm32f1xx_hal_gpio.o"
+"test2562021\stm32f1xx_hal_dma.o"
+"test2562021\stm32f1xx_hal_cortex.o"
+"test2562021\stm32f1xx_hal_pwr.o"
+"test2562021\stm32f1xx_hal_flash.o"
+"test2562021\stm32f1xx_hal_flash_ex.o"
+"test2562021\stm32f1xx_hal_exti.o"
+"test2562021\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "test2562021\test2562021.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test2562021.map" -o test2562021\test2562021.axf
